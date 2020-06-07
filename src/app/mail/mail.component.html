@@ -1,0 +1,54 @@
+<div class="col-12 col-lg-6 offset-lg-3 align-self-center border border-dark rounded-bottom shadow p-3 mb-5 bg-white rounded my-5 p-0">
+  <div class="col-12 border-bottom border-dark bg-primary m-0 p-0">
+    <h3 class="text-light py-3 pl-3 mb-0">
+      Poczta
+    </h3>
+  </div>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="receives-tab" data-toggle="tab" href="#receives" role="tab" aria-controls="receives" aria-selected="true">Odebrane</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="send-tab" data-toggle="tab" href="#send" role="tab" aria-controls="send" aria-selected="false">Wysłane</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+
+    <div class="tab-pane active" id="receives" role="tabpanel" aria-labelledby="receives-tab">
+      <a [routerLink]="['massage']" >
+        <div class="col-12 border-bottom border-dark m-0 p-0">
+          <h5 class="text-dark py-3 pl-3 mb-0">
+            Wiadomość przeczytana
+          </h5>
+          <h6 class="text-dark pb-3 pl-3 mb-0">
+            data
+          </h6>
+        </div>
+      </a>
+      <a [routerLink]="['massage']">
+        <div class="col-12 border-bottom border-dark m-0 p-0">
+          <h5 class="text-dark py-3 pl-3 mb-0">
+            <b>Wiadomość nie przeczytana</b>
+          </h5>
+          <h6 class="text-dark pb-3 pl-3 mb-0">
+            data
+          </h6>
+        </div>
+      </a>
+    </div>
+
+    <div class="tab-pane" id="send" role="tabpanel" aria-labelledby="send-tab">
+      <a [routerLink]="['massage']" >
+        <div class="col-12 border-bottom border-dark m-0 p-0">
+          <h5 class="text-dark py-3 pl-3 mb-0">
+            Wiadomość wysłana
+          </h5>
+          <h6 class="text-dark pb-3 pl-3 mb-0">
+            data
+          </h6>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
